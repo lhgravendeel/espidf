@@ -5,5 +5,6 @@ RUN apt update \
  && rm /var/lib/apt/lists/* /var/log/* -Rf
 
 RUN git clone --branch=v4.2 https://github.com/espressif/esp-idf.git esp-idf \
+ && cd ./esp-idf && git submodule update --init --recursive
  && ./esp-idf/install.sh
 
