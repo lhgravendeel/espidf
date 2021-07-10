@@ -6,5 +6,4 @@ RUN apt update \
 
 RUN git clone --recursive --branch=v4.2 https://github.com/espressif/esp-idf.git esp-idf \
  && ./esp-idf/install.sh
-RUN source ./esp-idf/export.sh
 
